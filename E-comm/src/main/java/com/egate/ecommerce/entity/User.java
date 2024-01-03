@@ -28,7 +28,7 @@ public class User implements UserDetails {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	private String firstName;
-	private String secondName;
+	private String lastName;
 	private String email;
 	private String password;
 	private Role role;
@@ -71,7 +71,7 @@ public class User implements UserDetails {
 	@Override
 	public boolean isEnabled() {
 		// TODO Auto-generated method stub
-		return false;
+		return true;
 	}
 
 }
